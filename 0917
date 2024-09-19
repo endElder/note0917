@@ -20,3 +20,46 @@ static void repl() { //定义了repl函数，
 
 这段代码是一个简单的 REPL（读取-评估-打印循环）实现，它使用 C 语言编写。当你运行这段代码时，它会显示一个 `>` 符号，等待用户输入命令。用户输入的每行文本都会被 `fgets` 函数读取并存储在 `line` 数组中。如果用户输入结束（例如，通过发送 EOF 信号），则 `fgets` 函数返回 `NULL`，程序会打印一个换行符并退出循环。如果成功读取了一行文本，`interpret` 函数会被调用来处理这行文本。
 
+当然可以。下面是一个简单的Python项目示例，它展示了如何使用 `__name__` 变量来控制代码的执行。这个项目包含两个文件：`greet.py` 和 `main.py`。
+
+### 文件1: `greet.py`
+这个文件定义了一个函数 `greet`，用于打印问候语。同时，它包含了一个检查 `__name__` 变量的条件语句，用于在直接运行该文件时执行额外的代码。
+
+```python
+# greet.py
+
+def greet(name):
+    print(f"Hello, {name}!")
+
+if __name__ == '__main__':
+    # 当文件被直接运行时，以下代码将执行
+    greet("World")
+```
+
+### 文件2: `main.py`
+这个文件导入 `greet.py` 中的 `greet` 函数，并调用它。由于 `main.py` 是主程序，它不会执行 `greet.py` 中 `if __name__ == '__main__':` 之下的代码。
+
+```python
+# main.py
+
+import greet
+
+greet.greet("Alice")
+```
+
+### 运行示例
+
+1. **直接运行 `greet.py`**:
+   - 命令行: `python greet.py`
+   - 输出: `Hello, World!`
+
+2. **运行 `main.py`**:
+   - 命令行: `python main.py`
+   - 输出: `Hello, Alice!`
+
+### 解释
+
+- 当你直接运行 `greet.py` 时，`__name__` 变量被设置为 `'__main__'`，因此 `greet("World")` 被执行，打印出 `Hello, World!`。
+- 当你通过 `main.py` 运行 `greet.py` 时，`__name__` 变量在 `greet.py` 中被设置为 `'greet'`（因为它被当作模块导入），所以 `if __name__ == '__main__':` 之下的代码不会执行。相反，`main.py` 中的代码调用 `greet.greet("Alice")` 并打印出 `Hello, Alice!`。
+
+这个示例展示了如何使用 `__name__` 变量来区分脚本是被直接运行还是作为模块导入，从而控制代码的执行。这种技术在编写可重用的Python模块时非常有用。
