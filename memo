@@ -9,3 +9,35 @@
 5. 数据库: 这里涉及数据库设计、SQL和数据库管理系统(如MySQL或PostgreSQL)等等。
 	
 6. 操作系统:学习操作系统可以更深入地了解软件如何与硬件交互。涉及的主题可能包括进程管理、内存管理、文件系统和并发性
+
+
+🍉 基础知识
+Linux基础：学习Linux的文件系统、命令行工具、进程管理和网络配置。参考资源：《Linux命令行与Shell脚本编程大全》。
+网络基础：理解IP地址、DNS、负载均衡、网络协议等。参考资源：《计算机网络：自顶向下方法》。
+	
+🥑 版本控制
+Git：掌握基本命令、分支管理和合并策略。参考资源：Pro Git。
+代码托管平台：学习如何使用GitHub、GitLab或Bitbucket进行代码合作、代码审查和持续集成。
+	
+🌈 持续集成与持续交付(CI/CD)
+Jenkins：从安装开始，学习如何创建构建任务、管理插件和设计构建流水线。参考资源：《Jenkins权威指南》。
+GitLab CI/CD：探索GitLab的内置CI/CD功能，如创建.gitlab-ci.yml文件、管理运行器等。
+其他CI工具：根据兴趣了解CircleCI、Travis CI或GitHub Actions。
+	
+🍰 配置管理与基础设施即代码(IaC)
+Ansible：学习Playbooks、Roles和Inventory的基础知识。参考：《Ansible：简化配置管理与自动化》。
+Terraform：掌握基础设施的编写、计划和应用。参考：《Terraform实战》。
+	
+🎁 容器技术
+Docker：从Dockerfile开始，学习创建、运行和管理容器。参考：《Docker深入实践》。
+Kubernetes：理解Pods、Services、Deployments等概念，并尝试在本地或云端部署应用程序。参考：《Kubernetes权威指南》。
+	
+🍭 监控、日志与警报
+Prometheus：学习如何收集和查询指标数据。参考：《Prometheus：上手监控系统》。
+ELK Stack：了解如何使用Elasticsearch、Logstash和Kibana收集、分析和可视化日志。
+	
+🍀 云服务平台
+根据你的兴趣或工作需求，选择一个主要的云提供商（如AWS、Azure或GCP）进行学习。深入了解基础的云服务、虚拟机、存储、网络和安全概念。
+	
+🎉 软件实践和文化
+研究DevOps的文化和哲学，了解如何在团队中推动改变和促进合作。参考：《DevOps手册：实践指南》。
